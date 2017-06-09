@@ -1,7 +1,6 @@
 <script>
   import moment from 'moment'
   import {registration} from '../models'
-  import Flatpickr from 'flatpickr'
 
   let defaults = {
     decorator: '',

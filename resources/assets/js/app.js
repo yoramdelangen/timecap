@@ -14,6 +14,7 @@ import axios from 'axios'
 import {registration, user} from './models'
 import navigation from './components/Navigation.vue'
 import routes from './router'
+import 'vue-flatpickr/theme/airbnb.css'
 
 Vue.use(Toast)
 Vue.use(VueRouter)
