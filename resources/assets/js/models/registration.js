@@ -77,12 +77,12 @@ export default {
 
 		_.each(_.filter(input.split(' ')), t => {
 			let b = t.match(/[0-9]+|[a-zA-Z]+/g);
-			let v = _.head(b);
+			let v = parseInt(_.head(b), 0);
 
 			switch(_.last(b)) {
-				case 'd': m += ((v * dt) * 60); break;
-				case 'h': m += (v * 60); break;
-				default: m += v; break;
+				case 'd': m = m + ((v * dt) * 60); break;
+				case 'h': m = m + (v * 60); break;
+				default: m = m + v; break;
 			}
 		});
 
